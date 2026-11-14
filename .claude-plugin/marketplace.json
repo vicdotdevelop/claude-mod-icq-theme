@@ -1,0 +1,14 @@
+{
+  "name": "vic-mods",
+  "description": "Vic's Claude Code mods for the desktop app and terminal, on Windows and macOS.",
+  "owner": {
+    "name": "Vic"
+  },
+  "plugins": [
+    {
+      "name": "icq-nostalgia",
+      "source": "./mods/icq-nostalgia",
+      "description": "Claude Code dressed as a 2007 messenger: mint theme, blossom backdrop, sender names, status flower and the message sound when Claude needs you."
+    }
+  ]
+}
