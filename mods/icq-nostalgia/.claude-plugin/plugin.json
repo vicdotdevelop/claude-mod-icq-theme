@@ -1,0 +1,53 @@
+{
+  "name": "icq-nostalgia",
+  "version": "0.1.0",
+  "description": "Claude Code dressed as a 2007 instant messenger: mint theme, glossy title bar, blossom backdrop, colored sender names, a status flower and a chime when Claude needs you.",
+  "author": {
+    "name": "Vic"
+  },
+  "license": "MIT",
+  "types": "./types/index.d.ts",
+  "keywords": [
+    "theme",
+    "sound",
+    "retro",
+    "claude-code-mod"
+  ],
+  "userConfig": {
+    "nickname": {
+      "type": "string",
+      "title": "Your nickname",
+      "description": "The name shown above your messages. Empty: your OS user name.",
+      "required": false,
+      "default": ""
+    },
+    "soundFile": {
+      "type": "string",
+      "title": "Custom sound (.wav)",
+      "description": "Absolute path to a .wav file to play instead of the built-in chime, e.g. a classic messenger sound you own. Empty: sounds/custom.wav in the mod folder if present, else the built-in chime.",
+      "required": false,
+      "default": ""
+    },
+    "turnSound": {
+      "type": "boolean",
+      "title": "Sound when Claude replies",
+      "description": "Play the message sound when Claude finishes a reply (permission prompts and questions always ding).",
+      "required": false,
+      "default": true
+    },
+    "minTurnSeconds": {
+      "type": "number",
+      "title": "Reply sound after (seconds)",
+      "description": "Only ding for replies that took at least this long, so quick answers stay quiet.",
+      "required": false,
+      "default": 4
+    },
+    "volume": {
+      "type": "number",
+      "title": "Volume (macOS)",
+      "description": "0 mutes, 1 is normal, up to 4. Windows plays at system volume.",
+      "required": false,
+      "default": 1
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.log
+*.plugin
+node_modules/
+.claude-plugin/types/
+mods/*/.claude-plugin/types/
+
+# Sounds you supply yourself (e.g. a classic messenger sound you own) stay local
+mods/*/sounds/custom.wav
